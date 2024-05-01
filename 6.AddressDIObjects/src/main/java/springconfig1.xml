@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="add" class="com.spring.six.AddressDIObjects.AddressBean"> 
+		<property name="housenum" value="2-112"></property>
+		<property name="city" value="Vijayawada"></property>
+		<property name="state" value="Andhra Pradesh"></property>
+		<property name="pincode" value="521105"></property>
+	</bean>
+	<bean id="std" class="com.spring.six.AddressDIObjects.StudentBean">
+		<property name="studentid" value="1"></property>
+		<property name="studentname" value="Tejaswi"></property>
+		<property name="address" ref="add"></property>
+	</bean>
+</beans>

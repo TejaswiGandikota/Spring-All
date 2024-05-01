@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="add" class="com.spring.six.AddressDIObjects.AddressBean"> 
+		<constructor-arg value="2-112"></constructor-arg>
+		<constructor-arg value="Vijayawada"></constructor-arg>
+		<constructor-arg value="Andhra Pradesh"></constructor-arg>
+		<constructor-arg value="521105"></constructor-arg>
+	</bean>
+	<bean id="std" class="com.spring.six.AddressDIObjects.StudentBean">
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="Tejaswi"></constructor-arg>
+		<constructor-arg ref="add"></constructor-arg>
+	</bean>
+</beans>

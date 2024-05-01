@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="abc" class="com.spring.eight.PropertyInterface.AmeerpetTechnologies"> 
+		<property name="studentbatches">
+			<props>
+				<prop key="10th Batch"> JavaFullStack</prop>
+				<prop key="11th Batch">DotNetFullStack</prop>
+				<prop key="112th Batch">PytyhonFullStack</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

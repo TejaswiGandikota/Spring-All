@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="name" class="com.spring.eight.Employee"> 
+		<property name="empname">
+			<list>
+				<value>Tejaswi</value>
+				<value>Latha</value>
+				<value>Anitha</value>
+				<value>Sruthi</value>
+			</list>
+		</property>
+		<property name="empnum">
+			<set>
+				<value>101</value>
+				<value>102</value>
+				<value>103</value>
+				<value>104</value>
+			</set>
+		</property>
+		<property name="empdeptno">
+			<map>
+				<entry key="Java" value="1"/>
+				<entry key="DotNet" value="2"/>
+				<entry key="python" value="3"/>
+				<entry key="C+" value="4"/>
+			</map>
+		</property>
+		<property name="empsalary">
+			<props>
+				<prop key="Java">60000</prop>
+				<prop key="DotNet">60000</prop>
+				<prop key="Python">55000</prop>
+				<prop key="C+">55000</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
